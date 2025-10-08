@@ -53,6 +53,19 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Carilah teks di internet yang sesuai '
+        'dengan foto atau tempat wisata yang ingin '
+        'Anda tampilkan. '
+        'Tambahkan nama dan NIM Anda sebagai '
+        'identitas hasil pekerjaan Anda. '
+        'Selamat mengerjakan 🙂.',
+        softWrap: true,
+      ),
+    );
+
     // Gabungkan layout dalam Scaffold
     return MaterialApp(
       title: 'Flutter layout: Tora Digda Kristiawan - 2341720161',
@@ -64,6 +77,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection,
             buttonSection,
+            textSection,
           ],
         ),
       ),
